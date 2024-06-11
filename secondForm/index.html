@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form with logical blocks</title>
+</head>
+<body>
+    <h1>Форма з логічними блоками</h1>
+    <form action="" method="post">
+        <fieldset>
+            <legend>Персональні дані</legend>
+            <p>
+                <label for="name">Ваше ім'я:</label><br>
+                <input
+                type="text"
+                id="name"
+                name="name"
+                placeholder="Введіть своє ім'я"
+                minlength="2"
+                maxlength="30"
+                required>
+            </p>
+            <p>
+                <label for="email">Email:</label><br>
+                <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="Введіть свій email"
+                required>
+            </p>
+            <p>
+                <label for="tel">Ваш номер телефону:</label><br>
+                <input
+                type="tel"
+                id="tel"
+                name="tel"
+                placeholder="+380 099 888 88 88"
+                required>
+            </p> 
+            <p>
+                <label for="file">Фото для профілю</label><br>
+                <input
+                type="file"
+                id="file"
+                name="file"
+                accept="image/png, image/jpg">
+            </p>
+            <button type="button">Наступний крок</button>
+        </fieldset>
+    </form>
+    <form action="" method="post">
+        <fieldset>
+            <legend>Додаткові дані</legend>
+            <p>
+                <label for="date">Ваша дата народження:</label><br>
+                <input
+                type="date"
+                id="date"
+                name="date">
+            </p>
+            <p>
+                <label for="city">Місто проживання:</label><br>
+                <select id="city" name="city">
+                    <option value="Kyiv">Київ</option>
+                    <option value="Zaporizhzhia">Запоріжжя</option>
+                    <option value="Lviv">Львів</option>
+                    <option value="Uzhhorod">Ужгород</option>
+                </select>
+            </p>
+            <button type="button">Назад</button>
+            <button type="button">Наступний крок</button>
+        </fieldset>
+        <form action="" method="post">
+            <fieldset>
+                <legend>Створюємо пароль</legend>
+                <p>
+                    <label for="password1">Пароль:</label><br>
+                    <input 
+                    type="password" 
+                    id="password1" 
+                    name="password1" 
+                    placeholder="Введіть пароль" 
+                    minlength="4" 
+                    maxlength="20" 
+                    required>
+                </p>
+                <p>
+                    <label for="password2">Підтвердження пароля:
+                    </label><br>
+                    <input 
+                    type="password" 
+                    id="password2" 
+                    name="password2" 
+                    placeholder="Повторіть пароль" 
+                    minlength="4" 
+                    maxlength="20" 
+                    required>
+                </p>
+                <p>
+                    <input type="checkbox" name="agree" checked required>
+                    <label for="agree">Я погоджуюсь з обробкою персональних даних</label>
+                </p>
+                <button type="button">Назад</button>
+                <button type="button">Зареєструватись</button>
+
+            </fieldset>
+    </form>
+    <a href="../index.html">Повернутись назад</a>
+</body>
+</html>
